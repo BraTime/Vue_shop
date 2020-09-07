@@ -97,7 +97,7 @@ export default {
         // 1、登录成功之后的 token 保存到sessionStorage中
         //     a.其他接口需在登录之后才能访问
         //     b.token只在当前网页有效 所以保存在sessionStorage中
-        console.log(res);
+        //console.log(res);
         // 将token保存到浏览器临时缓存中
         window.sessionStorage.setItem("token" , res.data.token);
         // 2、通过编程式导航 跳转后台主页 路由地址/home
