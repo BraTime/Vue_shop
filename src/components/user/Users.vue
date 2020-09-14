@@ -400,7 +400,8 @@ export default {
     setRolesDialogClose() {
       this.selectedRoleId = '';
       this.userInfo = {};
-    }
+    },
+    
   },
 };
 </script>
