@@ -191,7 +191,7 @@ export default {
         email: "",
         mobile: "",
       },
-      //   添加表单的验证规则对象
+      // 添加表单的验证规则对象
       addFormRules: {
         username: [
           { required: true, message: "请输入用户名", trigger: "blur" },

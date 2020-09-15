@@ -20,12 +20,17 @@ axios.interceptors.request.use(config => {
 //设置成全局的，然后再组件中通过this调用
 Vue.prototype.$http = axios
 
+// 导入vue-table-with-tree-grid
+import TreeTable from 'vue-table-with-tree-grid'
+
+Vue.component('tree-table', TreeTable)
+
 // 引入element-ui
 // import ElementUI from "element-ui"
  import "element-ui/lib/theme-chalk/index.css"
 // Vue.use(ElementUI)
 // 按需导入element-ui
-import {Button , Form , FormItem , Input , Message , Container , Header , Main , Aside  , Menu , Submenu , MenuItem , Breadcrumb , BreadcrumbItem , Card , Row , Col , Table , TableColumn , Switch , Tooltip , Pagination , Dialog , MessageBox , Tag, Tree , Select , Option} from "element-ui"
+import {Button , Form , FormItem , Input , Message , Container , Header , Main , Aside  , Menu , Submenu , MenuItem , Breadcrumb , BreadcrumbItem , Card , Row , Col , Table , TableColumn , Switch , Tooltip , Pagination , Dialog , MessageBox , Tag, Tree , Select , Option , Cascader} from "element-ui"
 // Message弹框提示组件
 Vue.use(Button)
 Vue.use(Form)
@@ -53,6 +58,7 @@ Vue.use(Tag)
 Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
+Vue.use(Cascader)
 
 // 全局挂载弹框提示
 Vue.prototype.$message = Message;
