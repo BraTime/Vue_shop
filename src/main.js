@@ -30,7 +30,7 @@ Vue.component('tree-table', TreeTable)
  import "element-ui/lib/theme-chalk/index.css"
 // Vue.use(ElementUI)
 // 按需导入element-ui
-import {Button , Form , FormItem , Input , Message , Container , Header , Main , Aside  , Menu , Submenu , MenuItem , Breadcrumb , BreadcrumbItem , Card , Row , Col , Table , TableColumn , Switch , Tooltip , Pagination , Dialog , MessageBox , Tag, Tree , Select , Option , Cascader} from "element-ui"
+import {Button , Form , FormItem , Input , Message , Container , Header , Main , Aside  , Menu , Submenu , MenuItem , Breadcrumb , BreadcrumbItem , Card , Row , Col , Table , TableColumn , Switch , Tooltip , Pagination , Dialog , MessageBox , Tag, Tree , Select , Option , Cascader, Alert, Tabs, TabPane} from "element-ui"
 // Message弹框提示组件
 Vue.use(Button)
 Vue.use(Form)
@@ -59,6 +59,9 @@ Vue.use(Tree)
 Vue.use(Select)
 Vue.use(Option)
 Vue.use(Cascader)
+Vue.use(Alert)
+Vue.use(Tabs)
+Vue.use(TabPane)
 
 // 全局挂载弹框提示
 Vue.prototype.$message = Message;
